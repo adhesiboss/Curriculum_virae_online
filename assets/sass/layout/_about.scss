@@ -1,0 +1,264 @@
+.about__container {
+    width: 100vw;
+    height: auto;
+    background-color: $greenwater;
+    font-family: $lato;
+    display: grid;
+
+
+
+    & img {
+        border-radius: 50%;
+        width: 60%;
+        height: auto;
+    }
+
+    @include md {
+
+        grid-template-columns: 20% 80%;
+        width: 100%;
+        height: auto;
+
+
+
+    }
+
+    .about__fijo {
+        @include md {
+            position: fixed;
+            width: 20%;
+
+        }
+    }
+
+    .about__col1 {
+        width: 100%;
+        height: auto;
+        grid-column: 1 / 1;
+        grid-row: 0;
+        padding: 8vh 2vw;
+
+
+
+
+        @include md {
+            grid-column: 1/ 2;
+            grid-row: 1 / 1;
+            height: 100%;
+            padding-top: 15vh;
+
+        }
+
+        .about__menu__item {
+            margin: 40px auto;
+            text-transform: uppercase;
+
+            .about__menu__link {
+                @include conversor(font-size, rem, 64, 48);
+
+                @include md {
+                    font-size: 2vw;
+
+                }
+
+                @include lg {
+                    font-size: 1.5vw;
+
+                }
+
+                color: $marine;
+                font-weight: bold;
+            }
+
+            .about__menu__link:nth-child(1) {
+                color: #336666;
+            }
+
+        }
+
+
+
+    }
+
+    .about__col2 {
+        background-color: $white;
+        width: 100%;
+        height: auto;
+        padding: 150px 30px;
+
+        @include md {
+            grid-column: 2 / 2;
+            grid-row: 1 / 1;
+
+
+        }
+
+        @include lg {
+            padding: 15vh 4vw;
+
+            font-size: 4vw;
+        }
+
+        & h1 {
+            text-transform: uppercase;
+            font-size: 12vw;
+            // @include conversor(font-size, rem, 64, 48);
+            color: $marine;
+            font-weight: bold;
+            margin: 0 0 40px;
+            // white-space:nowrap;
+
+            @include md {
+                font-size: 5vw;
+                text-align: start;
+                margin: 0 0 10px;
+
+            }
+
+            @include lg {
+
+                font-size: 5vw;
+            }
+
+
+        }
+
+        & h4 {
+            font-size: 8vw;
+            color: #666666;
+            line-height: 2.5rem;
+
+            @include md {
+                font-size: 3vw;
+                text-align: start;
+                line-height: 2rem;
+            }
+
+            @include lg {
+                font-size: 2vw;
+            }
+
+
+        }
+
+        & p {
+            font-size: 6vw;
+            text-align: center;
+            margin: 50px auto 70px;
+            color: #999999;
+            line-height: 3rem;
+
+            @include md {
+                font-size: 2.5vw;
+                text-align: start;
+                
+                line-height: 2rem;
+            }
+
+            @include lg {
+                font-size: 2vw;
+                line-height: 2.5rem;
+            }
+        }
+
+        .about__icons {
+            margin: 5vh auto;
+
+            .about__icon {
+                margin-right: 4vw;
+                color: $marine;
+
+                @include md {
+                    margin-right: 2vw;
+                }
+
+            }
+
+            @include md {
+                text-align: left !important;
+                font-size: 100%;
+                margin: 3vh auto;
+                margin-bottom: 100px;
+            }
+
+            @include lg {
+                font-size: 40%;
+                margin: 5vh auto;
+            }
+
+        }
+
+        & h2 {
+            text-transform: uppercase;
+            font-size: 10vw;
+            color: $marine;
+            font-weight: bold;
+            margin: 8vh auto;
+
+            @include md {
+                font-size: 4vw;
+                margin: 8vh auto;
+                text-align: start;
+            }
+        }
+
+        & h3 {
+            text-transform: uppercase;
+            font-size: 8vw;
+            color: $marine;
+            font-weight: bold;
+            margin: 5px auto 3px;
+            @include md {
+                width: 100%;
+                height: auto;
+                font-size: 3.5vw;
+                margin: 5px auto 0px;
+                text-align: start;
+            }
+            @include lg {
+                
+                font-size: 2.5vw;
+                margin: 5px auto 0px;
+                
+            }
+        }
+        & h5{
+            color: #656778;
+        }
+
+        .about__years {
+            width: 100%;
+            text-transform: uppercase;
+            font-size: 5vw;
+            color: #656778;
+            font-weight: lighter;
+            margin: 5px auto 3px;
+            @include md {
+                width: 100%;
+                height: auto;
+                font-size: 3vw;
+                 
+            }
+            @include lg {
+                
+                font-size: 2vw;
+                
+                
+            }
+        }
+        .about__educa{
+            margin: 60px auto;
+        }
+        .about__form-group{
+            .contacto__button{
+                @include md {
+                    text-align: left!important;
+                    
+                }   
+            
+        }
+    }
+    }
+
+
+}
